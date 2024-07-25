@@ -1,0 +1,139 @@
+<footer class="footer">
+<div class="container">
+    <div class="footer-contscts">
+        <div class="footer-title_container">
+            <a href="#" class="footer-link">
+                <svg class="footer-image">
+                    <use href=""></use>
+                </svg>
+            </a>
+            <h1 class="foot-title">Let’s <span class="footer-logo">work</span> together</h1> 
+        </div>
+
+        <div class="footer-clients_data">
+            <div class="form-email">
+                <form class="feedback-form" autocomplete="off">
+                <label for="email" class="form-label">clients@gmail.com</label>
+                <input
+                class="form-input"
+                type="email" 
+                name="email" 
+                id="mail"
+                autofocus >
+            </div>
+            <div class="form-comment" >
+                <label for="coment" class="form-label">comments</label>
+                <textarea
+                class="comment" 
+                name="comment" 
+                id="coment"  
+                rows="1" 
+                ></textarea>
+            </div>
+        
+
+            <div class="foter_buttons">
+                <button footer-modal-open type="send" class="buttons_footer" >Send</button>
+                </form>
+            </div>
+         </div>
+
+        <address>
+            <ul class=" footer-list">
+                <li class="item__email"><a href="lloydjefferson@gmail.com"class="footer-contact">lloydjefferson@gmail.com</a>
+                <li class="item__tel"><a href="tel:+3801111111111"class="footer-contact">+380 11 1111 11 11</a>
+            </ul>
+        </address>
+     </div>   
+</div>
+</footer>
+
+
+
+
+<div class="foot-modal">
+    <button class="modal-btd" footer-modal-close>
+        <svg class="icon-close" width="18" height="18" >
+            <use href=""></use>
+        </svg>
+    </button>
+    <form class="form" autocomplete="off"></form>
+
+
+    <h1 class="foot-modal_title">Thank you for your interest in cooperation!</h1>
+        <h2 class="foot-modal_comment">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</h2>
+        
+        </form>
+        </div>
+
+
+
+
+
+JavaScript
+
+const formData = {
+    email: "",
+    comments: "",
+
+    setFormValue(newemail, newcomments) {
+        this.email = newemail;
+        this.comments = newcomments;
+      },
+    };
+
+const formMessage = document.querySelector(".footer-clients_data");
+const STORAGE_KEY = "feedback-form-state";
+formMessage.addEventListener("input", inputText);
+formMessage.addEventListener("send", onSubmit);
+
+function getValueOfLocalstorage() {
+  const localdata = JSON.parse(localStorage.getItem(STORAGE_KEY));
+  if (localdata !== null) {
+    formData.setFormValue(localdata.email, localdata.comments);
+    formMessage.email.value = formData.email;
+    formMessage.message.value = formData.comments;
+  }
+}
+
+function inputText(event) {
+  const eventName = event.target;
+  switch (eventName.nodeName) {
+    case "INPUT":
+      formData.email = eventName.value.trim();
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
+      break;
+    case "TEXTAREA":
+      formData.comments = eventName.value.trim();
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
+      break;
+  }
+}
+
+function onSubmit(event) {
+  event.preventDefault();
+  if (formData.email === "" || formData.comments === "") {
+    return alert("Fill please all fields");
+  }
+  console.table(formData);
+  localStorage.removeItem(STORAGE_KEY);
+  formMessage.reset();
+}
+getValueOfLocalstorage();
+
+
+
+(() => {
+    const refs = {
+        openModalBtn: document.querySelector("[footer-modal-open]"),
+        closeModalBtn: document.querySelector("[footer-modal-close]"),
+        modal: document.querySelector("[foot-modal]"),
+    };
+    
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+    
+        function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+    }
+    })();
