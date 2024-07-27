@@ -143,10 +143,26 @@
     background-color: #a09d9d;
     opacity: 0;
     visibility: hidden;
+<<<<<<< Updated upstream
    
 
 }
 
+=======
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+
+}
+.foot-modal.open{
+    opacity: 1;
+    visibility: visible;
+}
+.foot-modal.open .foot-modal-content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+}
+>>>>>>> Stashed changes
 
 .foot-modal-body{
     min-height: 100%;
