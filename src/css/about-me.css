@@ -9,16 +9,19 @@ img {
 
 .about-me {
     background-color: #1C1D20;
+    padding: 64px 16px 64px 16px;
+}
+
+.about-me-conteiner{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 64px 16px 64px 16px;
 }
 
 .about-conteiner-text {
     border-radius: 24px;
-    width: 343px;
-    height: 500px;
+    min-width: 343px;
+    min-height: 500px;
     background-color: #242527;
     margin-bottom: 16px;
 }
@@ -89,9 +92,16 @@ img {
     letter-spacing: -0.02em;
     color: #fafafa;
     background-color: #1c1d20;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
+.accordion-container .ac .ac-panel .ac-text-two{
+    gap: 10px;
+}
 /* .ac-text .ac-text-span {} */
+
 
 .accordion-container .ac .ac-panel {
     border: none;
@@ -106,9 +116,7 @@ img {
     flex-direction: column;
 }
 
-.about-span-svg{
-    position: absolute;
-}
+
 
 .svg-about{
     fill: transparent;
@@ -116,4 +124,54 @@ img {
     margin: 7px;
     border-radius: 100%;
     border: 2px aqua solid;
+}
+
+.accordion-container .ac{
+    border: none;
+}
+
+.ac .ac-header .ac-trigger{
+ display: flex;
+ justify-content: space-between
+    /* align-items: flex-end;
+    flex-direction: column; */
+}
+
+@media screen and (min-width:768px){
+    .about-me{
+        padding: 64px 32px 64px 32px;
+    }
+
+    .about-conteiner-text{
+        width: 704px;
+        min-height: 700px;
+    }
+    
+    .about-text{
+     padding: 64px;
+     font-size: 38px;
+     line-height: 1.05;
+    }
+
+    .accordion-container .ac .ac-panel .ac-text{
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width:1140px){
+ .about-me{
+    padding: 96px 32px 96px 32px;
+   
+ }
+ .about-me-conteiner{
+  flex-direction: row;  
+  min-width: 1140px;
+ }
+
+ .about-conteiner-text{
+    min-width: 680;
+ }
+ img {
+    width: 704px;
+ };
 }

@@ -9,5 +9,11 @@ new Accordion('.accordion-container', {
 });
 
 
-
+// const accordion = document.querySelector('.ac-header');
+// accordion.forEach(el => {
+//   el.addEventListener('click', (event) => {
+//     let element = event.currenTarget
+//     console.log(element);
+//   })
+// });
 
