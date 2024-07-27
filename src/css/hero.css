@@ -1,0 +1,166 @@
+.hero {
+  height: 100vh;
+  padding-top: 240px;
+  padding-bottom: 32px;
+  background: url(/Images/hero/Hero-mob.png) no-repeat center center;
+  background-size: cover;
+}
+
+.hero-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.social-list {
+  display: flex;
+  gap: 4px;
+  justify-content: space-around;
+}
+
+.socail-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50px;
+  text-align: center;
+}
+
+.socail-link-email {
+  height: 30px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50px;
+  text-align: center;
+}
+
+/* Медиазапросы */
+@media screen and (min-width: 375px) {
+  .container {
+    min-width: 375px;
+    /* kalkdled */
+  }
+  .hero {
+    padding-top: 281px;
+    background: url(/Images/hero/Hero-mob.png) no-repeat center center;
+    background-size: cover;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .socail-link {
+    width: 37px;
+    height: 37px;
+    font-size: 14px;
+  }
+  .socail-link-email {
+    height: 37px;
+    width: 172px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .hero {
+    height: 1024px;
+    padding-top: 300px;
+    background: url(/Images/hero/Hero-tab.png) no-repeat center center;
+    background-size: cover;
+  }
+  .title {
+    font-size: 90px;
+  }
+  .social-list {
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .socail-link {
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .socail-link-email {
+    height: 55px;
+    width: 223px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1279px) {
+  .container {
+    padding: 0;
+    min-width: 1280px;
+  }
+  .hero {
+    max-height: 900px;
+    background: url(/Images/hero/Hero-desk.png) no-repeat center center;
+    background-size: cover;
+  }
+  .title {
+    width: 1084px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 32px;
+    max-width: 4480px;
+  }
+  .title {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Медиазапрос для ретины и устройств с высоким разрешением */
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero {
+    background: url(/Images/hero/Hero-mob-x2.png) no-repeat center center;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hero {
+      background: url(/Images/hero/Hero-tab-x2.png) no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+  @media screen and (min-width: 1279px) {
+    .hero {
+      background: url(/Images/hero/Hero-desk-x2.png) no-repeat center center;
+      background-size: cover;
+    }
+  }
+}

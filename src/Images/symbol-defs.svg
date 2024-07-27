@@ -1,10 +1,20 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <symbol id="icon-to-down" viewBox="0 0 32 32">
+      <path stroke-width="3.556" d="m8 12 8 8 8-8"/>
+    </symbol>
+    <symbol id="icon-to-up" viewBox="0 0 32 32">
+      <path stroke-width="3.556" d="m24 20-8-8-8 8"/>
+    </symbol>
     <symbol id="icon-close" viewBox="0 0 32 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.286" d="M24 8 8 24M8 8l16 16"/>
     </symbol>
     <symbol id="icon-open" viewBox="0 0 64 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="5.333" d="M4 5.111h56M4 26.889h56"/>
+    </symbol>
+    <symbol id="icon-art" viewBox="0 0 31 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.783" d="M1.391 29.217c2.783 0 6.411.475 8.313-1.426a4.87 4.87 0 1 0-6.887-6.887c-1.902 1.902 0 5.53-1.426 8.313z"/>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.783" d="M9.739 20.869c-.684-.684-1.026-1.026-1.219-1.384a2.782 2.782 0 0 1 .053-2.737c.207-.35.562-.679 1.271-1.336L23.573 2.699a3.067 3.067 0 0 1 4.335 4.335L15.195 20.763c-.657.71-.985 1.064-1.336 1.271a2.784 2.784 0 0 1-2.737.053c-.358-.193-.7-.535-1.384-1.219z"/>
     </symbol>
     <symbol id="icon-urgent" viewBox="0 0 23 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.909" d="M20.6 1.455H2.673C2 1.455 1.455 2 1.455 2.673c0 3.877 1.54 7.595 4.281 10.336l1.773 1.773c.176.176.264.264.327.349a1.454 1.454 0 0 1 0 1.739 3.703 3.703 0 0 1-.327.349l-1.773 1.773a14.617 14.617 0 0 0-4.281 10.336c0 .673.545 1.218 1.218 1.218H20.6c.673 0 1.218-.545 1.218-1.218 0-3.877-1.54-7.595-4.281-10.336l-1.773-1.773a3.58 3.58 0 0 1-.327-.349 1.454 1.454 0 0 1 0-1.739 3.58 3.58 0 0 1 .327-.349l1.773-1.773a14.617 14.617 0 0 0 4.281-10.336c0-.673-.545-1.218-1.218-1.218z"/>
@@ -14,9 +24,6 @@
     </symbol>
     <symbol id="icon-user" viewBox="0 0 32 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.667" d="M26.667 28c0-1.861 0-2.791-.23-3.548a5.333 5.333 0 0 0-3.556-3.556c-.757-.23-1.687-.23-3.548-.23h-6.667c-1.861 0-2.791 0-3.548.23a5.335 5.335 0 0 0-3.556 3.556c-.23.757-.23 1.687-.23 3.548M16 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/>
-    </symbol>
-    <symbol id="icon-menu-mob" viewBox="0 0 32 32">
-      <path d="M4.799 8.001a1.6 1.6 0 0 1 1.6-1.6h19.2a1.6 1.6 0 0 1 0 3.2h-19.2a1.6 1.6 0 0 1-1.6-1.6zM4.799 16.001a1.6 1.6 0 0 1 1.6-1.6h19.2a1.6 1.6 0 0 1 0 3.2h-19.2a1.6 1.6 0 0 1-1.6-1.6zM4.799 24.001a1.6 1.6 0 0 1 1.6-1.6h19.2a1.6 1.6 0 0 1 0 3.2h-19.2a1.6 1.6 0 0 1-1.6-1.6z"/>
     </symbol>
   </defs>
 </svg>
