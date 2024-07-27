@@ -66,7 +66,7 @@ img {
 }
 
 .accordion-container .ac .ac-trigger::after {
-    content: "^";
+    content: "";
 }
 
 .accordion-container .ac-header .ac-trigger {
@@ -101,4 +101,19 @@ img {
 .accordion-container .ac .ac-header {
     background-color: #1c1d20;
     height: 68px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.about-span-svg{
+    position: absolute;
+}
+
+.svg-about{
+    fill: transparent;
+    stroke: #fafafa;
+    margin: 7px;
+    border-radius: 100%;
+    border: 2px aqua solid;
 }
