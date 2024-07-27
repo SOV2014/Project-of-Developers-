@@ -1,5 +1,5 @@
 .hero {
-  height: 700px;
+  height: 100vh;
   padding-top: 240px;
   padding-bottom: 32px;
   background: url(/Images/hero/Hero-mob.png) no-repeat center center;
@@ -69,7 +69,6 @@
   }
   .hero {
     padding-top: 281px;
-    height: 812px;
     background: url(/Images/hero/Hero-mob.png) no-repeat center center;
     background-size: cover;
   }
