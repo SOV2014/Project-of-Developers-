@@ -1,0 +1,149 @@
+.header {
+  background: transparent;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+}
+.logo-text {
+  font-family: Inter Tight, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.open-menu-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.open-menu {
+  fill: transparent;
+  stroke: #fafafa;
+}
+
+/* ------------------------menu-------------------------- */
+.menu {
+  height: 100vh;
+  width: 100vw;
+  background: url(/Images/hero/background-mobile-menu.png) no-repeat center
+    center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  padding-top: 32px;
+  padding-bottom: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .menu {
+    background: url(/Images/hero/background-mobile-menu-x2.png) no-repeat center
+      center;
+    background-size: cover;
+  }
+}
+.close-menu-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  /* position: absolute;
+  top: 16px;
+  right: 16px; */
+}
+.close-menu {
+  fill: transparent;
+  stroke: #fafafa;
+}
+.nav {
+  height: 100%;
+  padding-top: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+.menu-list-item {
+  font-family: Inter Tight, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
+}
+.button-oder {
+  font-family: Inter Tight, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  border-radius: 60px;
+  width: 164px;
+  height: 45px;
+  background-color: #ed3b44;
+  border: none;
+}
+
+.button-tablet {
+  display: none;
+}
+.tablet-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .open-menu-btn {
+    display: none;
+  }
+
+  .button-tablet {
+    display: block;
+  }
+  .tablet-nav {
+    display: block;
+  }
+}
+
+/* ----------------------------------tablet and desktop ---------------------------*/
+.menu-header {
+  background: transparent;
+  border: none;
+  height: 39px;
+  font-family: Inter Tight, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
+}
+
+.tablet-nav {
+  text-align: center;
+}

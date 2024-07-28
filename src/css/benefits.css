@@ -38,12 +38,11 @@ img {
 
 .container {
   max-width: 320px;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 
 .benefits-title {
-  padding-top: 96px;
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
@@ -51,6 +50,7 @@ img {
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
   padding-bottom: 32px;
+  padding-top: 96px;
 }
 
 .benefits-list {
@@ -62,7 +62,7 @@ img {
 .benefits-list-item {
   background-color: #242527;
   border-radius: 20px;
-  width: 320px;
+  width: 100%;
   height: auto;
 }
 
@@ -84,16 +84,17 @@ img {
   letter-spacing: -0.02em;
   color: #fafafa;
   margin: 0 auto;
-  padding: 0 24px 8px 24px;
+  padding: 0 24px;
 }
 
 .benefits-list-text {
-  padding: 0 24px;
+  padding: 8px 24px 24px 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
+  text-align: left;
 }
 
 .benefits-scroll-btn {
@@ -111,6 +112,7 @@ img {
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
+  margin-top: 32px;
 }
 
 @media screen and (min-width: 375px) {
@@ -122,16 +124,18 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-  }
-
-  .benefits-list-item {
-    background: #242527;
+    padding: 0 32px;
   }
 
   .benefits-list {
     display: flex;
-    flex-direction: row-reverse;
-    flex-basis: calc((100% - 32px) / 2);
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .benefits-list-item {
+    background: #242527;
+    max-width: 344px;
   }
 
   .benefits-list-item {
@@ -141,6 +145,34 @@ img {
 
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1440px;
+    min-width: 1440px;
+    padding: 0 100px;
+  }
+
+  .benefits-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .benefits-left-container {
+    display: flex;
+  }
+
+  .benefits-right-container {
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+  }
+
+  .benefits-title {
+    text-align: left;
+    padding: 0;
+    width: 284px;
+  }
+
+  .benefits-list {
+    justify-content: flex-start;
   }
 }

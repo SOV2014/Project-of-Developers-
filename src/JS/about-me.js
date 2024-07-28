@@ -16,4 +16,3 @@ new Accordion('.accordion-container', {
 //     console.log(element);
 //   })
 // });
-
