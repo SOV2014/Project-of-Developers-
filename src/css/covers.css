@@ -130,7 +130,8 @@
 
 
 .cover {
-
+    backdrop-filter: blur(30px);
+    background: url('../Images/cover-back/elements123-min.png') no-repeat center center fixed;
 
     min-width: 320px;
     height: 100vh;
@@ -199,8 +200,8 @@
 }
 
 @media screen and (min-width: 1440px) {
-    /* .cover {
-        backdrop-filter: blur(30px);
-        background: url('./Images/cover-back/elements_vectors-min.png') no-repeat center center fixed;
-    } */
+    .cover {
+        /* backdrop-filter: blur(30px);
+        background: url('./Images/cover-back/elements_vectors-min.png') no-repeat center center fixed; */
+    }
 }
